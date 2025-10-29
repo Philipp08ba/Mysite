@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>P.L.B. Investment GmbH</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Impact, sans-serif;
+        background-color: #FFD700;
+        color: #000;
+    }
+
+    /* Навигационное меню */
+    nav {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+        z-index: 10;
+    }
+
+    nav a {
+        color: #FFD700;
+        text-decoration: none;
+        margin: 0 25px;
+        font-size: 22px;
+        transition: color 0.3s;
+    }
+
+    nav a:hover {
+        color: white;
+    }
+
+    section {
+        padding: 100px 10%;
+    }
+
+    h1, h2 {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    h2 {
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 22px;
+        line-height: 1.6em;
+    }
+
+    /* Главный экран */
+    .hero {
+        height: 100vh;
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), 
+        url('https://images.unsplash.com/photo-1737703638422-2cfa152cdcb7?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0') 
+        no-repeat center center/cover;
+        color: #FFD700;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 70px;
+        margin-bottom: 20px;
+    }
+
+    .hero p {
+        font-size: 26px;
+        max-width: 900px;
+    }
+
+    /* Про нас */
+    .about {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    .about img {
+        width: 45%;
+        border-radius: 15px;
+    }
+
+    /* Сервисы */
+    .services {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .service {
+        background-color: #000;
+        color: #FFD700;
+        flex: 1;
+        padding: 40px;
+        border-radius: 20px;
+    }
+
+    /* Преимущества */
+    .advantages {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .advantage {
+        background-color: #FFD700;
+        border: 5px solid #000;
+        flex: 1;
+        padding: 40px;
+        border-radius: 20px;
+    }
+
+    /* Процесс */
+    .process {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .step {
+        background-color: #000;
+        color: #FFD700;
+        flex: 1;
+        padding: 40px;
+        border-radius: 20px;
+    }
+
+    /* Контакты */
+    .contact {
+        background-color: #000;
+        color: #FFD700;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 100px 10%;
+        height: 100vh;
+    }
+
+    .contact-info {
+        flex: 1;
+        font-size: 26px;
+    }
+
+    .contact-form {
+        flex: 1;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 15px;
+        font-size: 18px;
+        border: none;
+        border-radius: 8px;
+    }
+
+    button {
+        background-color: #FFD700;
+        color: #000;
+        border: none;
+        padding: 15px 25px;
+        font-size: 20px;
+        cursor: pointer;
+        border-radius: 10px;
+        font-family: Impact, sans-serif;
+    }
+
+    button:hover {
+        background-color: #fff;
+    }
+
+</style>
+</head>
+<body>
+
+<!-- Навигационное меню -->
+<nav>
+    <a href="#home">Startseite</a>
+    <a href="#about">Über uns</a>
+    <a href="#services">Leistungen</a>
+    <a href="#advantages">Vorteile</a>
+    <a href="#process">Ablauf</a>
+    <a href="#contact">Kontakt</a>
+</nav>
+
+<!-- Главный экран -->
+<section class="hero" id="home">
+    <h1>P.L.B. Investment GmbH</h1>
+    <p>Ihr Partner für nachhaltige Business-, Handels- und Finanzstrategien.  
+    Wir verbinden Marktkenntnis mit analytischer Präzision, um für unsere Kunden Wachstum, Stabilität und unternehmerische Sicherheit zu schaffen.</p>
+</section>
+
+<!-- Про нас -->
+<section id="about">
+    <h2>Wer wir sind</h2>
+    <div class="about">
+        <div class="text">
+            <p>P.L.B. Investment GmbH ist ein deutsches Beratungsunternehmen mit Schwerpunkt auf Business-, Trading- und Finanzstrategien.  
+            Wir unterstützen mittelständische und internationale Unternehmen bei der Entwicklung effizienter Strukturen, Kapitaloptimierung und Marktexpansion.  
+            Unser Team vereint Erfahrung aus Investmentbanken, Unternehmensberatung und internationalem Handel.  
+            Durch datenbasierte Analysen und praxisorientierte Strategien schaffen wir Lösungen, die langfristig wirken.  
+            Unser Ziel ist es, Werte zu schaffen – transparent, sicher und partnerschaftlich.</p>
+        </div>
+        <img src="https://plus.unsplash.com/premium_photo-1661962229590-dd3986bc984e?w=600&auto=format&fit=crop&q=60" alt="Team">
+    </div>
+</section>
+
+<!-- Сервисы -->
+<section id="services">
+    <h2>Unsere Leistungen</h2>
+    <div class="services">
+        <div class="service">
+            <h3>Finanz- & Investitionsberatung</h3>
+            <p>Wir analysieren Kapitalstrukturen, bewerten Investitionsrisiken und entwickeln Finanzstrategien, die Ihr Wachstum sichern.  
+            Unsere Empfehlungen basieren auf tiefgehenden Marktstudien und individuellen Zielen.</p>
+        </div>
+        <div class="service">
+            <h3>Trading-Strategien & Marktanalyse</h3>
+            <p>Unser Expertenteam kombiniert algorithmische Analyse und manuelles Research, um Handelsstrategien mit maximaler Rendite zu gestalten.  
+            Dabei steht Risikokontrolle stets im Mittelpunkt.</p>
+        </div>
+        <div class="service">
+            <h3>Business Consulting</h3>
+            <p>Von der Gründung bis zur Skalierung begleiten wir Unternehmen in allen Phasen.  
+            Wir helfen, Strukturen zu optimieren, Märkte zu erschließen und Geschäftsmodelle zukunftssicher zu gestalten.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Преимущества -->
+<section id="advantages">
+    <h2>Warum P.L.B. Investment?</h2>
+    <div class="advantages">
+        <div class="advantage">
+            <h3>Individuelle Strategien</h3>
+            <p>Jeder Kunde erhält Lösungen, die exakt auf seine Ziele und Marktbedingungen zugeschnitten sind – kein Standard, nur Präzision.</p>
+        </div>
+        <div class="advantage">
+            <h3>Erfahrung & Kompetenz</h3>
+            <p>Unser Team bringt über 15 Jahre Erfahrung aus internationalen Finanzmärkten, Beratung und Handel mit.</p>
+        </div>
+        <div class="advantage">
+            <h3>Transparente Zusammenarbeit</h3>
+            <p>Wir arbeiten offen, klar und partnerschaftlich – Vertrauen ist die Basis jeder erfolgreichen Zusammenarbeit.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Процесс -->
+<section id="process">
+    <h2>Unser Ablauf</h2>
+    <div class="process">
+        <div class="step">
+            <h3>1. Analyse & Zieldefinition</h3>
+            <p>Wir beginnen mit einer detaillierten Bestandsaufnahme und klaren Zieldefinition, um Ihre strategischen Prioritäten festzulegen.</p>
+        </div>
+        <div class="step">
+            <h3>2. Strategieentwicklung</h3>
+            <p>Basierend auf Daten und Erfahrung entwickeln wir maßgeschneiderte Konzepte für nachhaltigen Erfolg.</p>
+        </div>
+        <div class="step">
+            <h3>3. Umsetzung & Monitoring</h3>
+            <p>Wir begleiten Sie in der Umsetzung und passen Strategien dynamisch an Marktveränderungen an.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Контакты -->
+<section class="contact" id="contact">
+    <div class="contact-info">
+        <h2>Kontaktieren Sie uns</h2>
+        <p>Wir freuen uns auf Ihre Anfrage. Schreiben Sie uns – gemeinsam gestalten wir Ihre nächste Wachstumsphase.  
+        Unser Team steht bereit, um Ihre Vision mit fundierten Strategien zu unterstützen.</p>
+        <p><strong>E-Mail:</strong> team@plb-investment.de</p>
+        <p><strong>Adresse:</strong> Landenbergerstraße 27, 73728 Esslingen am Neckar</p>
+    </div>
+    <div class="contact-form">
+        <form>
+            <input type="text" placeholder="Ihr Name" required>
+            <input type="email" placeholder="Ihre E-Mail" required>
+            <textarea rows="5" placeholder="Ihre Nachricht"></textarea>
+            <button type="submit">Nachricht senden</button>
+        </form>
+    </div>
+</section>
+
+</body>
+</html>
